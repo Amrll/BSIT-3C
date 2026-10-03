@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router";
 import Button from "../../components/Button";
 
 function LandingPage() {
+  
   const navigate = useNavigate();
 
   const navigateToLogin = () => {
@@ -16,11 +17,11 @@ function LandingPage() {
 
       <Link to="/login">Go to Login</Link>
 
-      <Button label="Go to Login" onClick={navigateToLogin} />
-      <Button label="Go to Login" onClick={navigateToLogin} />
-      <Button label="Go to Login" onClick={navigateToLogin} />
-      <Button label="Go to Login" onClick={navigateToLogin} />
-      <Button label="Go to Login" onClick={navigateToLogin} />
+      <Button label="Go to Login" onClick={navigateToLogin} type="button" />
+      <Button label="Go to Login" onClick={navigateToLogin} type="button" />
+      <Button label="Go to Login" onClick={navigateToLogin} type="button" />
+      <Button label="Go to Login" onClick={navigateToLogin} type="button" />
+      <Button label="Go to Login" onClick={navigateToLogin} type="button" />
     </div>
   );
 }

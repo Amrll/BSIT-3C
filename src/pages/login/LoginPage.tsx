@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
+import { MESSAGES } from "../../constants/messages";
 
 function LoginPage() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [hasError, setHasError] = useState(true);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -13,6 +15,14 @@ function LoginPage() {
   };
 
   useEffect(() => {}, [])
+
+
+  if(hasError) {
+    return <p className="text-red-500">{MESSAGES.error.generic}</p>
+  }
+
+  // Conditional Rendering
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

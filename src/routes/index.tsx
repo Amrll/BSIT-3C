@@ -3,6 +3,7 @@ import LandingPage from "../pages/landing/LandingPage";
 import LoginPage from "../pages/login/LoginPage";
 import AboutPage from "../pages/about/AboutPage";
 import MainLayout from "../layout/MainLayout";
+import DashboardPage from "../pages/dashboard/DashboardPage";
 
 const AppRoutes = () => {
   return (
@@ -10,6 +11,7 @@ const AppRoutes = () => {
       <Route element={<MainLayout />}>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Route>
 
       <Route path="/login" element={<LoginPage />} />

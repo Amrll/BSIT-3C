@@ -5,6 +5,7 @@ type ButtonProps = {
 };
 
 const Button = ({ label, onClick, type }: ButtonProps) => {
+
   return (
     <button
       onClick={onClick}
